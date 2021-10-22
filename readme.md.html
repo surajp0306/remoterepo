@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <link rel="indianflag icon" href="{{ url_for('static', filename='india.ico') }}">
+  <script src="Javascript.js"></script>
+  <title> First web Page</title>
+  <link rel="stylesheet" href="static/style.css" type="text/css" />	
+</head>
+<body style="  background-image: linear-gradient(to right,skyblue,grey)";>
+	<h1 class="happy" style="font-size:60px;">WELCOME TO MY NEW BLOG</h1>
+<div id="intro">
+ <h2>Welcome to my Webpage </h2>
+  <br>
+</div>
+  <p class="first" style="font-size:250%"><i>FOOD <strong> CHARTS </strong> (SNACKS) </i></p>
+  <p style="font-size:210%">LISTS:</p>
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "GO EAT SOME VADAPAV";
+}
+</script>
+<br>
+<h3 class="sp">MORNING List</h3>
+<ul>
+  <li>VADAAPAV</li>
+	<img src="vadapav.jpg" alt="VADAPAV" align="middle" style="width:100px;height:140px;">
+  <li>MISALPAV</li>
+	<img src="misalpav.jpg" alt="MISALPAV" align="middle" style="width:100px;height:140px;">
+  <li>DAHIVADA</li>
+	<img src="dahivada.jpg" alt="DAHIVADA" align="middle" style="width:100px;height:140px;">
+  <li>MEDUVADA</li>
+	<img src="meduvada.jpg" alt="MEDUVADA" align="middle" style="width:100px;height:140px;">
+</ul>
+<h3>EVENING List</h3>
+<ol>
+  <li>SHEVPURI</li>
+<img src="vadapav.jpg" alt="VADAPAV" align="middle" style="width:100px;height:140px;">
+  <li>PANIPURI</li>
+<img src="panipuri.jpg" alt="PANIPURI" align="middle" style="width:100px;height:140px;">
+  <li>SUKHIBHEL</li>
+<img src="sukhibhel.jpg" alt="SUKHIBHEL" align="middle" style="width:100px;height:140px;">
+  <li>SUKHIPURI</li>
+<img src="sukhipuri.jpg" alt="SUKHIPURI" align="middle" style="width:100px;height:140px;">
+</ol>
+
+ <p>
+            *Embedding a video from internet <BR>
+            <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/lrAzNrre5oo?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+
+<h3>A Description List</h3>
+
+<dl>
+  <dt>Chocolate bar</dt>
+  <dd>- Western sweet</dd>
+  <dt>Gulab Jamun</dt>
+  <dd>- Indian sweet</dd>
+</dl>
+
+  <a href="https://www.indiatimes.com/culture/food/12-spicy-indian-dishes-you-have-to-try-before-you-die-230699.html">Visit here for more spicy cousins</a>
+<br> 
+  
+<br>
+
+Street food of Mumbai is the food sold by hawkers from portable market stalls in Mumbai. It is one of the characteristics of the city.[1] The city is known for its distinctive street foods.[2] Although street food is common all over India, street food in Mumbai is noted because people from all economic classes eat on the roadside almost round the clock and it is sometimes felt that the taste of street food is better than restaurants in the city.[3][4][5] Many Mumbaikars like a small snack on the road in the evening.[6] People of Mumbai cut across barriers of class, religion, gender and ethnicity are passionate about street food.[7] Street food vendors are credited by some for developing the city's food culture.[8] Street food in Mumbai is relatively inexpensive as compared to restaurants and vendors tend to be clustered around crowded areas such as colleges and railway stations.
+<br>
+
+<p style="background-color:rgb(255, 0, 65);">style="color:blue;">IDALI</p>
+<p style="background-color:rgb(0, 65, 255);">style="color:blue;">VADAA</p>
+<p style="background-color:rgb(60, 79, 113);">style="color:blue;">PONGAL</p>
+
+<!-- This is a comment  before the address-->
+<br>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+.city {
+  background-color: skyblue;
+  color: black;
+  border: 9px solid black;
+  margin: 35px;
+  padding: 13px;
+}
+</style>
+
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>SURAJ</td>
+    <td>PULEKAR</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>SANANTH</td>
+    <td>JAISURYA</td>
+    <td> 69</td>
+  </tr>
+</table>
+
+<br>
+
+<div class="city">
+  <h2>Mumbai</h2>
+  <p>VADAPAV is firstlove of MUMBAIKARS</p>
+</div>
+
+<div class="city">
+  <h2>Banglore</h2>
+  <p>RASSOGULLA is firstlove of BANGALIS</p>
+</div>
+
+<button onclick="revealMessage()">Click here plzz!</button>
+<p id="hiddenMessage" style=display:none">GO EAT SOME VADAPAVS</p>
+
+<h4>JavaScript Objects</h4>
+
+<p id="cool"></p>
+
+<script>
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<h4>JavaScript typeof</h4>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("cool").innerHTML = 
+typeof "" + "<br>" +
+typeof "John" + "<br>" + 
+typeof "John Doe";
+</script>
+
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+typeof 0 + "<br>" + 
+typeof 314 + "<br>" +
+typeof 3.14 + "<br>" +
+typeof (3) + "<br>" +
+typeof (3 + 4);
+</script>
+<h2>JavaScript Statements</h2>
+
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo"></p>
+
+<script>
+let x, y, z;  
+x = 5;       
+y = 6;        
+z = x + y;   
+
+  
+
+
+
+
+<address>
+bharati vidyapeeth college of engineering.<br> 
+Visit us at:<br>
+Example.com<br>
+khargar ,navi mumbai<br>
+India.
+</address>
+
+</body>
+</html> 
